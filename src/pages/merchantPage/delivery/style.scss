@@ -1,0 +1,39 @@
+.delivery-container {
+  .accordion-summary {
+    height: 48px !important;
+    min-height: 48px !important;
+  }
+  .accordion-title {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 16px;
+    .size {
+      --text-opacity: 1;
+      color: rgba(160, 174, 192, var(--text-opacity));
+      font-size: 0.75rem;
+    }
+  }
+
+  .delivery-areas-container {
+    list-style: none;
+    padding: 0px;
+    width: 100%;
+    .delivery-area {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+      border-top-width: 1px;
+      --border-opacity: 1;
+      border-color: rgba(226, 232, 240, var(--border-opacity));
+      border-top: 1px solid rgba(226, 232, 240, var(--border-opacity));
+      .icon-style {
+        --text-opacity: 1;
+        color: rgba(160, 174, 192, var(--text-opacity));
+        font-size: 1rem;
+      }
+    }
+  }
+}

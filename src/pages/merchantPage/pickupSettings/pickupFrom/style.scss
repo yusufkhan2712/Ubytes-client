@@ -1,0 +1,46 @@
+.PickupFrom-container {
+  padding-top: 1.75rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+  background-color: white;
+  .title {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin: 0.5rem;
+    line-height: 1.5;
+  }
+
+  .main-content {
+    padding: 1rem;
+    align-items: center;
+    display: flex;
+    background-color: transparent;
+    .content {
+      width: 100%;
+      align-items: center;
+      display: flex;
+      .icon-container {
+        padding-right: 0.5rem;
+        padding-top: 0.25rem;
+      }
+      .branch-infos {
+        .name {
+          font-weight: 700;
+          font-size: 80%;
+        }
+        .desc {
+          --text-opacity: 1;
+          color: rgba(140, 140, 140, var(--text-opacity));
+          font-size: 80%;
+        }
+      }
+    }
+    .change-container {
+      text-transform: uppercase;
+      color: var(--color-primary);
+      margin-left: 0.5rem;
+      font-size: 0.75rem;
+      line-height: 1.5;
+    }
+  }
+}

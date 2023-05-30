@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3367c880.chunk.css",
+    "main.js": "/static/js/main.9e53dd8a.chunk.js",
+    "main.js.map": "/static/js/main.9e53dd8a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.eb889403.js",
+    "runtime-main.js.map": "/static/js/runtime-main.eb889403.js.map",
+    "static/css/2.0a0ce284.chunk.css": "/static/css/2.0a0ce284.chunk.css",
+    "static/js/2.e6fd679a.chunk.js": "/static/js/2.e6fd679a.chunk.js",
+    "static/js/2.e6fd679a.chunk.js.map": "/static/js/2.e6fd679a.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.0a0ce284.chunk.css.map": "/static/css/2.0a0ce284.chunk.css.map",
+    "static/css/main.3367c880.chunk.css.map": "/static/css/main.3367c880.chunk.css.map",
+    "static/js/2.e6fd679a.chunk.js.LICENSE.txt": "/static/js/2.e6fd679a.chunk.js.LICENSE.txt",
+    "static/media/checkout-pick-up.33b4d254.png": "/static/media/checkout-pick-up.33b4d254.png",
+    "static/media/coverhome.c6ed32d3.jpg": "/static/media/coverhome.c6ed32d3.jpg",
+    "static/media/notifications.css": "/static/media/notification.c5d9251e.ttf",
+    "static/media/style.css": "/static/media/recommendBanner.50281697.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eb889403.js",
+    "static/css/2.0a0ce284.chunk.css",
+    "static/js/2.e6fd679a.chunk.js",
+    "static/css/main.3367c880.chunk.css",
+    "static/js/main.9e53dd8a.chunk.js"
+  ]
+}

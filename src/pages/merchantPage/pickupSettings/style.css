@@ -1,0 +1,404 @@
+.system-container {
+  overflow-x: hidden;
+  position: absolute;
+  top: 0px;
+  background-color: #fff;
+  display: flex;
+  width: 100%;
+  min-width: 300px;
+  max-width: 460px;
+}
+
+.system-container > div {
+  width: 100%;
+}
+
+@media (min-width: 401px) {
+  .system-container {
+    border-right: 1px solid #dfe2e7;
+  }
+}
+@media (min-width: 601px) {
+  .merchant-list-body {
+    width: 100%;
+  }
+}
+
+.checkout-wrapper .checkout-header-banner {
+  position: fixed;
+}
+
+.checkout-wrapper .page-checkout {
+  overflow: auto;
+  margin-bottom: 40px;
+  margin-top: 36px;
+}
+
+.checkout-wrapper-inner {
+  width: 100%;
+}
+
+.checkout-wrapper-inner .checkout-myBucket-wrapper .myBucket-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.checkout-wrapper-inner .checkout-myBucket-wrapper .myBucket-header p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: -0.24px;
+  color: #3e4462;
+}
+
+.checkout-wrapper-inner
+  .checkout-myBucket-wrapper
+  .myBucket-header
+  .add-itemss {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkout-wrapper-inner
+  .checkout-myBucket-wrapper
+  .myBucket-header
+  .add-itemss
+  p {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.24px;
+  color: #288edb;
+}
+.checkout-myBucket-inner {
+  text-align: left;
+}
+.name {
+  align-self: flex-start;
+  font-size: small;
+}
+.checkout-wrapper-inner
+  .checkout-myBucket-wrapper
+  .myBucket-header
+  .add-itemss
+  .plsicn {
+  height: 24px;
+  text-align: left;
+}
+
+.checkout-wrapper-inner
+  .checkout-myBucket-wrapper
+  .myBucket-bucketList
+  .bucket-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin: 10% 0;
+}
+
+.checkout-wrapper-inner
+  .checkout-myBucket-wrapper
+  .myBucket-bucketList
+  .bucket-card
+  .img {
+  width: 25%;
+  margin-right: 4%;
+}
+
+.checkout-wrapper-inner
+  .checkout-myBucket-wrapper
+  .myBucket-bucketList
+  .bucket-card
+  .bucket-card-content {
+  width: 45%;
+}
+
+.checkout-wrapper-inner
+  .checkout-myBucket-wrapper
+  .myBucket-bucketList
+  .bucket-card
+  .bucket-card-content
+  .name {
+  color: #3e4462;
+  font-size: 16px;
+}
+
+.checkout-wrapper-inner
+  .checkout-myBucket-wrapper
+  .myBucket-bucketList
+  .bucket-card
+  .bucket-card-content
+  .desc {
+  color: #7e7e7e;
+  font-size: 12px;
+}
+
+.checkout-wrapper-inner
+  .checkout-myBucket-wrapper
+  .myBucket-bucketList
+  .bucket-card
+  .bucket-card-content
+  .prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+}
+
+.checkout-wrapper-inner
+  .checkout-myBucket-wrapper
+  .myBucket-bucketList
+  .bucket-card
+  .bucket-card-content
+  .prices
+  .dp {
+  color: #7e7e7e;
+  margin-right: 5%;
+}
+
+.checkout-wrapper-inner
+  .checkout-myBucket-wrapper
+  .myBucket-bucketList
+  .bucket-card
+  .bucket-card-content
+  .prices
+  .mp {
+  color: #cacaca;
+  text-decoration: line-through;
+}
+
+.checkout-wrapper-inner
+  .checkout-myBucket-wrapper
+  .myBucket-bucketList
+  .bucket-card
+  .bucket-card-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  width: 30%;
+}
+
+.checkout-wrapper-inner
+  .checkout-myBucket-wrapper
+  .myBucket-bucketList
+  .bucket-card
+  .bucket-card-actions
+  i {
+  border-radius: 15px;
+  width: 15px;
+  height: 15px;
+  justify-content: center;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  font-size: medium;
+  font-weight: 600;
+}
+
+.checkout-wrapper-inner
+  .checkout-myBucket-wrapper
+  .myBucket-bucketList
+  .bucket-card
+  .bucket-card-actions
+  .b-d-icn {
+  width: 60px;
+  cursor: pointer;
+}
+
+.checkout-wrapper-inner
+  .checkout-myBucket-wrapper
+  .myBucket-bucketList
+  .bucket-card
+  .bucket-card-actions
+  .bucket-item-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.checkout-wrapper-inner
+  .checkout-myBucket-wrapper
+  .myBucket-bucketList
+  .bucket-card
+  .bucket-card-actions
+  .bucket-item-actions
+  .addsub-item-bckt {
+  cursor: pointer;
+  text-align: center;
+  color: #cacaca;
+  width: 20px;
+  border: 1px solid #cacaca;
+  border-radius: 50%;
+  margin: 0 8%;
+  padding: 3px 0px;
+}
+
+.checkout-wrapper-inner
+  .checkout-myBucket-wrapper
+  .myBucket-bucketList
+  .bucket-card
+  .bucket-card-actions
+  .bucket-item-actions
+  .bkt-itm-qnt {
+  font-size: 14px;
+}
+
+.checkout-wrapper-inner .note-header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.24px;
+  color: #3e4462;
+}
+
+.checkout-wrapper-inner .note-body {
+  width: 100%;
+}
+
+.checkout-wrapper-inner .note-body #chkout-note-body {
+  background-color: #f2f5f8;
+  resize: none;
+  font-family: "Poppins", Sans-Serif;
+  padding: 2%;
+  width: 90%;
+  height: 100px;
+  border: none;
+  margin-top: 3%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.24px;
+  color: #7e7e7e;
+}
+
+.checkout-wrapper-inner .payment-header {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: -0.24px;
+  color: #3e4462;
+  margin-bottom: 5%;
+}
+
+.checkout-wrapper-inner .checkout-paymemnt-bill-item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 5% 0;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.24px;
+  color: #3e4462;
+}
+
+.checkout-wrapper-inner .checkout-paymemnt-bill-item .toPay,
+.checkout-wrapper-inner .checkout-paymemnt-bill-item .payAmount {
+  color: #000000;
+}
+
+.basket-checkout {
+  background-color: #fff;
+  -webkit-box-shadow: 4px -13px 34px -14px rgba(166, 166, 166, 0.74);
+  box-shadow: 4px -13px 34px -14px rgba(166, 166, 166, 0.74);
+  position: fixed;
+  bottom: 0px;
+  height: 80px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.basket-checkout .basket-checkout-button {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  background-color: rgba(40, 142, 219, 0.86);
+  width: 90%;
+  height: 60%;
+  margin: 4% auto;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+
+.basket-checkout-button-inner {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.del-area-popup-vis,
+.del-area-popup-hid {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.459);
+  width: 100%;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+.del-area-popup-vis input,
+.del-area-popup-vis textarea {
+  border: 2px solid lightgrey;
+  width: 80%;
+  padding-left: 10px;
+  height: 3rem;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+.del-area-popup-hid {
+  display: none;
+}
