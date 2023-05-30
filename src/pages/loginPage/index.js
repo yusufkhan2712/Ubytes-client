@@ -22,7 +22,7 @@ export default function LoginPage() {
       const uid = user.uid;
 
       await firestore
-        .collection("clientusers")
+        .collection("clientuser")
         .doc(uid)
         .set({
           phone: phone ? phone : "",
@@ -93,8 +93,8 @@ export default function LoginPage() {
           email: uemail,
           phone: uphone,
           name: uname,
-          of: cart().of ? cart().of : "",
-          ofMerchant: cart().ofMerchant ? cart().ofMerchant : "",
+          merchant: cart().merchant ? cart().merchant : "",
+          branch: cart().branch ? cart().branch : "",
         })
         .then((k) => {
           localStorage.setItem(

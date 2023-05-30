@@ -73,35 +73,15 @@ export default function Delivery(props) {
           />
         </div>
       </section>
-      <div className="delivery-container">
+
+      <div className="delivery-container" style={{ marginTop: 10 }}>
         {areas.map((area) => (
-          <Accordion className={classes.accordion}>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              id={area.of}
-              className="accordion-summary"
-            >
-              <div className={`${classes.heading} accordion-title`}>
-                <div>{area.area}</div>
-                <div className="size">{area.area}</div>
-              </div>
-            </AccordionSummary>
-            <AccordionDetails className={classes.AccordionDetails}>
-              <ul
-                className="delivery-areas-container"
-                onClick={() =>
-                  history.push(`/${merchantid}/delivery/${area.branchId}`)
-                }
-              >
-                {area?.deliveryAreas?.map((item) => (
-                  <li key={item.id} className="delivery-area">
-                    <div>{item.area}</div>
-                    <ArrowForwardIosIcon className="icon-style" />
-                  </li>
-                ))}
-              </ul>
-            </AccordionDetails>
-          </Accordion>
+          <div className={classes.accordion}>
+            <div className={`${classes.heading} accordion-title`}>
+              <div>{area.area}</div>
+              <div className="size">{area.area}</div>
+            </div>
+          </div>
         ))}
       </div>
     </>

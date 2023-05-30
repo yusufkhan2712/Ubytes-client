@@ -46,9 +46,8 @@ export default function MerchantList() {
           {merchantlist.map((merchant) => (
             <div
               className="merchant-list-item"
-              onClick={() => history.push(`${merchant.uid}/delivery`)}
+              onClick={() => history.push(`${merchant.uid}/pickup`)}
             >
-              
               <FastfoodOutlined></FastfoodOutlined>
               <div
                 style={{

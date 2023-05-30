@@ -40,6 +40,7 @@ const MerchantPage = ({ match, history }) => {
       .doc(merchantid)
       .get();
     setmerchant(merchant_.data());
+    console.log(merchant_.data());
     loadBranches(merchant_.id);
   };
   const loadBranches = async (id) => {
@@ -81,7 +82,7 @@ const MerchantPage = ({ match, history }) => {
                 style={{
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "contain",
-                  backgroundImage: `url(${merchant.brandBanner})`,
+                  backgroundImage: `url(${merchant.banner})`,
                 }}
               />
               <div className="home-card-wrapper">
@@ -96,7 +97,7 @@ const MerchantPage = ({ match, history }) => {
               <div className="small-info">
                 <div className="button-row">
                   <button
-                    onClick={() => history.push(`${match.url}/delivery`)}
+                    onClick={() => history.push(`${match.url}/pickup`)}
                     style={
                       selectedRoute !== "delivery"
                         ? { color: "black", backgroundColor: "lightgrey" }

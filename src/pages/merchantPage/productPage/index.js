@@ -97,13 +97,13 @@ const ProductPage = (props) => {
   };
 
   const descreaseAdditionnalItem = (item, index) => {
-    let items = additionalItems;
+  /*   let items = additionalItems;
 
     items[index]["totalQuantity"]--;
     items[index]["totalPrice"] -= parseInt(item.price);
 
-    setAdditionalItems(items);
-    /*  if (item.totalQuantity > 0) {
+    setAdditionalItems(items); */
+  if (item.totalQuantity > 0) {
       const items = [...additionalItems];
       const findIndex = items.findIndex((a) => (a.name = item.name));
       const tp = item.totalPrice - parseFloat(item.price);
@@ -111,7 +111,7 @@ const ProductPage = (props) => {
       items[findIndex].totalPrice = tp;
       items[findIndex].totalQuantity = tq;
       setAdditionalItems(items);
-    } */
+    } 
   };
 
   const addToCart = () => {
@@ -165,7 +165,7 @@ const ProductPage = (props) => {
       "/" +
       basket.type +
       "/" +
-      prdct.branchId;  
+      prdct.branchId;
   };
 
   const editCart = () => {
@@ -254,10 +254,9 @@ const ProductPage = (props) => {
                 <div className="item-prc">
                   INR {item.price}
                   {item.totalQuantity > 0 ? (
-                    <i
-                      className="far fa-trash-alt delicon"
-                      onClick={() => descreaseAdditionnalItem(item, index)}
-                    ></i>
+                    <div onClick={() => descreaseAdditionnalItem(item, index)}>
+                      <i className="far fa-trash-alt delicon"></i>
+                    </div>
                   ) : null}
                 </div>
               </div>

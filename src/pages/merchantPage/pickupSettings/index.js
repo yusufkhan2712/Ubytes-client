@@ -21,7 +21,7 @@ const PickupSetting = () => {
   const [selectedDay, setSelectedDay] = useState("Today");
   const [selectedHour, setSelectedHour] = useState("ASAP");
   const [products, setProducts] = useState(cart().items);
-  const navigation=useHistory();
+  const navigation = useHistory();
   const checkout = async () => {
     if (!paymentMethod) {
       NotificationManager.error("Please select a payment method");
@@ -47,8 +47,6 @@ const PickupSetting = () => {
       user: user().name,
       useremail: user().email,
       userPhone: user().phone ? user.phone() : "",
-      branchName: basket.branchName,
-      merchantName: basket.brandName,
       totalPrice: basket.total,
       selectedDay,
       selectedHour,
@@ -60,7 +58,9 @@ const PickupSetting = () => {
       .then((doc) => {
         doc.update({ orderId: doc.id });
         emptyCart();
-        navigation.push(`/${basket.items[0].merchantId}/pickup/order/${doc.id}`);
+        navigation.push(
+          `/${basket.items[0].merchantId}/pickup/order/${doc.id}`
+        );
         //window.location.href = `${basket.items[0].merchantId}/pickup/order/${doc.id}`;
       });
   };
